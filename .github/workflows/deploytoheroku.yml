@@ -60,6 +60,6 @@ jobs:
       - name: Login to Heroku
         run: heroku container:login
       - name: Push Docker Container
-        run: heroku container:push web - shoppingappnf
+        run: heroku container:push web - lasses-todo-app
       - name: Release Docker Container
-        run: heroku container:release web -a shoppingappnf
+        run: heroku container:release web -a lasses-todo-app
