@@ -12,7 +12,7 @@ export default function OpenTodos({ todos, onAdvance} : OpenTodoProps){
     return(
 
     <div className={"opentodos"}>
-        <TodoCard todo={allOpenTodos} onAdvance={onAdvance}/>
+        {allOpenTodos.map((element) => <TodoCard todo={element} onAdvance={onAdvance}/>)}
     </div>
     )
         }
